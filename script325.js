@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+    var goButton = document.getElementById('goButton');
+    goButton.click = function() {
+      this.style.background = 'red';
+      this.style.color = 'white';
+      processList();
+    }
+});
+
+
+
+
 function processList() {
   var lis = getData();
   callMap(lis)

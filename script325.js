@@ -20,12 +20,12 @@ function callMap(lis) {
 
 function callFilter(lis) {
   var lessthan5lis = lis.filter((a)=>a<5);
-  document.getElementById('redresults').innerHTML = lessthan5lis.join(',');
+  document.getElementById('filresults').innerHTML = lessthan5lis.join(',');
 }
 
 function callReduce(lis) {
   var sum = lis.reduce((a,b)=>a+b);
-  document.getElementById('filresults').innerHTML = sum;
+  document.getElementById('redresults').innerHTML = sum;
 }
 
 // counts how many odds are in a list

@@ -1,16 +1,23 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     var goButton = document.getElementById('gobutton');
-    goButton.onclick = function() {
-      this.style.background = 'red';
-      this.style.color = 'white';
-      processList();
-    }
+    //goButton.onclick = function() {
+    //  this.style.background = 'red';
+    //  this.style.color = 'white';
+    //  processList();
+    //}
 });
 
 
 
 
 function processList() {
+  // these two statements won't work, even if called from 
+  // the button's onclick handler b/c processList is outside
+  // of the button ... therefore its referencing environment
+  // is different than if you put the code below directly
+  // inside the handler
+  // this.style.background = "red";
+  // this.style.color = "white";
   var lis = getData();
   callMap(lis)
   callFilter(lis)

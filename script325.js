@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-    var goButton = document.getElementById('goButton');
+    var goButton = document.getElementById('gobutton');
     goButton.click = function() {
       this.style.background = 'red';
       this.style.color = 'white';

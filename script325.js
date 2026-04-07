@@ -1,6 +1,4 @@
 function processList() {
-  this.style.background = "red";
-  this.style.color = "white";
   var lis = getData();
   callMap(lis)
   callFilter(lis)
